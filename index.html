@@ -90,67 +90,69 @@
             <div class="container">
                 <section id="contact">
 
-                    
+
                     <!-- форма обратной связи -->
 
                     <h1>Форма обратной связи</h1>
 
-                    <form method="POST" action="https://httpbin.org/post" enctype="multipart/form-data">
-                        <div>
+                    <form class="order-form" method="POST" action="https://httpbin.org/post" enctype="multipart/form-data">
+                        <div class="form-row">
                             <label for="fio">ФИО</label>
-                            <input type="text" id="fio" name="fio" placeholder="Иванов Иван Иванович" />
+                            <input type="text" id="fio" name="fio" class="form-input" placeholder="Иванов Иван Иванович">
                         </div>
 
-                        <div>
+                        <div class="form-row">
                             <label for="email">Почта</label>
-                            <input type="text" id="email" name="email" placeholder="example@gmail.com" />
+                            <input type="text" id="email" name="email" class="form-input" placeholder="example@gmail.com">
                         </div>
 
-                        <fieldset>
-
+                        <fieldset class="order-part">
                             <legend>Как вы о нас узнали?</legend>
-                            <div>
-                                <input type="radio" name="source" value="friends" id="friends" />
-                                <label for="friend">Друзья</label>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" name="source" value="friends" id="friends">
+                                    <label for="friends">Друзья</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" name="source" value="ad" id="ad">
+                                    <label for="ad">Реклама</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" name="source" value="network" id="network">
+                                    <label for="network">Социальные сети</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" name="source" value="system" id="system">
+                                    <label for="system">Поисковые системы</label>
+                                </div>
                             </div>
-                            <div>
-                                <input type="radio" name="source" value="ad" id="ad" />
-                                <label for="ad">Реклама</label>
-                            </div>
-                            <div>
-                                <input type="radio" name="source" value="network" id="network" />
-                                <label for="network">Социальные сети</label>
-                            </div>
-                            <div>
-                                <input type="radio" name="source" value="system" id="system" />
-                                <label for="system">Поисковые системы</label>
-                            </div>
-                            <div>
+
+                            <div class="form-row">
                                 <label for="category">Категория обращения</label>
-                                <select name="category" id="category">
+                                <select name="category" id="category" class="form-select">
                                     <option value="">Выберите категорию</option>
                                     <option value="complaint">Жалоба</option>
                                     <option value="offer">Предложение</option>
                                 </select>
                             </div>
 
-                            <div>
+                            <div class="form-row">
                                 <label for="comment">Комментарий</label>
-                                <textarea name="comment" id="comment" cols="50" rows="10"></textarea>
+                                <textarea name="comment" id="comment" class="form-textarea" placeholder="Ваш комментарий..."></textarea>
                             </div>
 
-                            <div>
-                                <input type="checkbox" name="agree" id="agree" required />
+                            <div class="form-row checkbox-row">
+                                <input type="checkbox" name="agree" id="agree" required>
                                 <label for="agree">Согласен с правилами обработки данных</label>
                             </div>
 
-                            <div>
+                            <div class="form-row">
                                 <label for="attachment">Вложение</label>
-                                <input type="file" name="attachment" id="attachment" />
+                                <input type="file" name="attachment" id="attachment" class="form-input">
                             </div>
 
-                            <div>
-                                <button type="submit">Отправить</button>
+                            <div class="form-buttons">
+                                <button type="submit" class="submit-btn">Отправить</button>
                             </div>
                         </fieldset>
                     </form>
