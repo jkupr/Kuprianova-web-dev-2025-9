@@ -67,13 +67,16 @@ footer {
 	}
 
 	.main-menu a.active {
-		color: tomato;
+		color: white; /* Белый по умолчанию */
 	}
+
+		.main-menu a.active:hover {
+			color: tomato; /* Оранжевый только при наведении */
+		}
 
 .auth-item {
 	margin-left: auto;
 }
-
 h1 {
 	font-size: 32px;
 	font-weight: 700;
