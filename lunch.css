@@ -477,3 +477,63 @@ p {
         max-width: 95%;
     }
 }
+
+/* Добавьте эти стили в конец файла lunch.css */
+
+/* Стили для отображения заказа */
+.order-display {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.selected-dish {
+    font-weight: 500;
+    color: #333;
+}
+
+.no-selection {
+    color: #666;
+    font-style: italic;
+}
+
+.remove-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #ff6b35;
+    cursor: pointer;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+    .remove-btn:hover {
+        background-color: #ff6b35;
+        color: white;
+    }
+
+.total-cost {
+    border-top: 2px solid #f1eee9;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.total-amount {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+/* Стиль для выделенной карточки */
+.dish-card[style*="border: 2px solid tomato"] {
+    border: 2px solid tomato !important;
+}

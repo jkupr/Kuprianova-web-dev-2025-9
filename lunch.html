@@ -83,9 +83,9 @@
                     <h2>Главные блюда</h2>
                     <div class="dishes-grid">
                         <div class="dish-card">
-                            <img src="images/dish1.jpg" alt="Лазанья">
-                            <p class="price">385 руб.</p>
-                            <p class="name">Лазанья</p>
+                            <img src="images/dish1.jpg" alt="Жареная картошка с грибами">
+                            <p class="price">150 руб.</p>
+                            <p class="name">Жареная картошка с грибами</p>
                             <p class="weight">350 г</p>
                             <button class="add-btn">Добавить</button>
                         </div>
@@ -97,9 +97,9 @@
                             <button class="add-btn">Добавить</button>
                         </div>
                         <div class="dish-card">
-                            <img src="images/dish3.jpg" alt="Жареная картошка с грибами">
-                            <p class="price">150 руб.</p>
-                            <p class="name">Жареная картошка с грибами</p>
+                            <img src="images/dish3.jpg" alt="Лазанья">
+                            <p class="price">385 руб.</p>
+                            <p class="name">Лазанья</p>
                             <p class="weight">350 г</p>
                             <button class="add-btn">Добавить</button>
                         </div>
@@ -109,24 +109,24 @@
                 <section class="dishes-section">
                     <h2>Напитки</h2>
                     <div class="dishes-grid">
-                        <div class="dish-card">
-                            <img src="images/drink1.jpg" alt="Апельсиновый сок">
+                        <div class="dish-card" data-dish="cola">
+                            <img src="images/drink1.jpg" alt="Coca-cola">
+                            <p class="price">110 руб.</p>
+                            <p class="name">Coca-cola</p>
+                            <p class="weight">300 мл</p>
+                            <button class="add-btn">Добавить</button>
+                        </div>
+                        <div class="dish-card" data-dish="orange-juice">
+                            <img src="images/drink2.jpg" alt="Апельсиновый сок">
                             <p class="price">120 руб.</p>
                             <p class="name">Апельсиновый сок</p>
                             <p class="weight">300 мл</p>
                             <button class="add-btn">Добавить</button>
                         </div>
-                        <div class="dish-card">
-                            <img src="images/drink2.jpg" alt="Яблочный сок">
+                        <div class="dish-card" data-dish="berry-juice">
+                            <img src="images/drink3.jpg" alt="Морс">
                             <p class="price">90 руб.</p>
-                            <p class="name">Яблочный сок</p>
-                            <p class="weight">300 мл</p>
-                            <button class="add-btn">Добавить</button>
-                        </div>
-                        <div class="dish-card">
-                            <img src="images/drink3.jpg" alt="Морковный сок">
-                            <p class="price">110 руб.</p>
-                            <p class="name">Морковный сок</p>
+                            <p class="name">Ягодный морс</p>
                             <p class="weight">300 мл</p>
                             <button class="add-btn">Добавить</button>
                         </div>
@@ -139,38 +139,11 @@
                     <form class="order-form" method="POST" action="https://httpbin.org/post">
 
                         <!-- Раздел с заказом -->
+                        <!-- Раздел с заказом -->
                         <div class="order-part">
                             <h3>Ваш заказ</h3>
 
-                            <div class="form-row">
-                                <label for="soup">Суп</label>
-                                <select id="soup" name="soup" class="form-select">
-                                    <option value="">- Выберите суп -</option>
-                                    <option value="tom-yam">Том Ям с креветками - 365 руб.</option>
-                                    <option value="norwegian">Норвежский суп - 270 руб.</option>
-                                    <option value="mushroom">Грибной крем-суп - 240 руб.</option>
-                                </select>
-                            </div>
-
-                            <div class="form-row">
-                                <label for="main">Главное блюдо</label>
-                                <select id="main" name="main" class="form-select">
-                                    <option value="">- Выберите главное блюдо -</option>
-                                    <option value="lasagna">Лазанья - 385 руб.</option>
-                                    <option value="chicken">Котлеты из курицы с картофельным пюре - 225 руб.</option>
-                                    <option value="potato">Жареная картошка с грибами - 150 руб.</option>
-                                </select>
-                            </div>
-
-                            <div class="form-row">
-                                <label for="drink">Напиток</label>
-                                <select id="drink" name="drink" class="form-select">
-                                    <option value="">- Выберите напиток -</option>
-                                    <option value="orange">Апельсиновый сок - 120 руб.</option>
-                                    <option value="apple">Яблочный сок - 90 руб.</option>
-                                    <option value="carrot">Морковный сок - 110 руб.</option>
-                                </select>
-                            </div>
+                            <!-- Здесь будут динамически добавляться элементы заказа -->
 
                             <div class="form-row">
                                 <label for="comments">Комментарии к заказу</label>
@@ -250,5 +223,9 @@
             Позвонить нам +7-000-000-00-00
         </div>
     </footer>
+
+    <script src="dishes.js"></script>
+    <script src="displayDishes.js"></script>
+    <script src="orderManager.js"></script>
 </body>
 </html>
