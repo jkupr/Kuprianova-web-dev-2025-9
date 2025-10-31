@@ -537,3 +537,57 @@ p {
 .dish-card[style*="border: 2px solid tomato"] {
     border: 2px solid tomato !important;
 }
+
+/* Стили для фильтров */
+.filters-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    background-color: #f1eee9;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+    .filter-btn:hover {
+        background-color: #e0dcd7;
+        border-color: #ccc;
+    }
+
+    .filter-btn.active {
+        background-color: #1a1a1a;
+        color: white;
+        border-color: #1a1a1a;
+    }
+
+/* Адаптивность для фильтров */
+@media (max-width: 800px) {
+    .filters-container {
+        gap: 8px;
+    }
+
+    .filter-btn {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 600px) {
+    .filters-container {
+        gap: 6px;
+        justify-content: center;
+    }
+
+    .filter-btn {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}

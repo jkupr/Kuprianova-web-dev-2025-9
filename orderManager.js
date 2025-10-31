@@ -8,14 +8,18 @@ function initializeOrderManager() {
     const currentOrder = {
         soup: null,
         main: null,
-        drink: null
+        drink: null,
+        salad: null,
+        dessert: null
     };
 
     // Элементы DOM для отображения заказа
     const orderDisplay = {
         soup: createOrderDisplayElement('soup', 'Суп'),
         main: createOrderDisplayElement('main', 'Главное блюдо'),
-        drink: createOrderDisplayElement('drink', 'Напиток')
+        drink: createOrderDisplayElement('drink', 'Напиток'),
+        salad: createOrderDisplayElement('salad', 'Салат или стартер'),
+        dessert: createOrderDisplayElement('dessert', 'Десерт')
     };
 
     const totalCostElement = createTotalCostElement();
@@ -36,11 +40,15 @@ function initializeOrderManager() {
         orderContainer.insertBefore(orderDisplay.soup, hrElement);
         orderContainer.insertBefore(orderDisplay.main, hrElement);
         orderContainer.insertBefore(orderDisplay.drink, hrElement);
+        orderContainer.insertBefore(orderDisplay.salad, hrElement);
+        orderContainer.insertBefore(orderDisplay.dessert, hrElement);
     } else {
         // Если нет разделителя, добавляем в конец
         orderContainer.appendChild(orderDisplay.soup);
         orderContainer.appendChild(orderDisplay.main);
         orderContainer.appendChild(orderDisplay.drink);
+        orderContainer.appendChild(orderDisplay.salad);
+        orderContainer.appendChild(orderDisplay.dessert);
     }
 
     // Добавляем блок стоимости после всех элементов
@@ -72,12 +80,21 @@ function createOrderDisplayElement(category, label) {
     container.innerHTML = `
         <label>${label}</label>
         <div class="order-display" id="${category}-display">
-            <span class="no-selection">${category === 'drink' ? 'Напиток не выбран' : 'Блюдо не выбрано'}</span>
+            <span class="no-selection">${getNoSelectionText(category)}</span>
         </div>
         <input type="hidden" name="${category}" id="${category}-input" value="">
     `;
 
     return container;
+}
+
+function getNoSelectionText(category) {
+    const texts = {
+        drink: 'Напиток не выбран',
+        dessert: 'Десерт не выбран',
+        salad: 'Салат не выбран'
+    };
+    return texts[category] || 'Блюдо не выбрано';
 }
 
 function createTotalCostElement() {
@@ -136,8 +153,7 @@ function removeDishFromOrder(category, currentOrder, orderDisplay, totalCostElem
     const displayElement = document.getElementById(`${category}-display`);
     const inputElement = document.getElementById(`${category}-input`);
 
-    displayElement.innerHTML = '<span class="no-selection">' +
-        (category === 'drink' ? 'Напиток не выбран' : 'Блюдо не выбрано') + '</span>';
+    displayElement.innerHTML = '<span class="no-selection">' + getNoSelectionText(category) + '</span>';
     inputElement.value = '';
 
     // Обновляем общую стоимость
