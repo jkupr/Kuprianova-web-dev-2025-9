@@ -59,7 +59,7 @@ function initializeOrderManager() {
         if (e.target.classList.contains('add-btn')) {
             const dishCard = e.target.closest('.dish-card');
             const dishKeyword = dishCard.getAttribute('data-dish');
-            const dish = dishes.find(d => d.keyword === dishKeyword);
+            const dish = getDishes().find(d => d.keyword === dishKeyword);
 
             if (dish) {
                 addDishToOrder(dish, currentOrder, orderDisplay, totalCostElement);
