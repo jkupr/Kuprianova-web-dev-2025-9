@@ -24,15 +24,17 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function displayCategoryDishes(category, dishes) {
-    const categorySections = {
-        soup: document.querySelector('.dishes-section:nth-child(2) .dishes-grid'),
-        main: document.querySelector('.dishes-section:nth-child(3) .dishes-grid'),
-        drink: document.querySelector('.dishes-section:nth-child(4) .dishes-grid'),
-        salad: document.querySelector('.dishes-section:nth-child(5) .dishes-grid'),
-        dessert: document.querySelector('.dishes-section:nth-child(6) .dishes-grid')
+    const sections = document.querySelectorAll('.dishes-section');
+
+    const sectionIndex = {
+        soup: 0,
+        main: 1,
+        drink: 2,
+        salad: 3,
+        dessert: 4
     };
 
-    const container = categorySections[category];
+    const container = sections[sectionIndex[category]]?.querySelector('.dishes-grid');
     if (!container) return;
 
     // Очищаем контейнер
@@ -101,22 +103,24 @@ function initializeFilters() {
 }
 
 function findCategorySection(category) {
-    const categoryTitles = {
-        soup: 'Выберите суп',
-        main: 'Выберите главное блюдо',
-        drink: 'Выберите напиток',
-        salad: 'Выберите салат или стартер',
-        dessert: 'Выберите десерт'
+    const sections = document.querySelectorAll('.dishes-section');
+
+    // Порядок секций на странице:
+    // 0 - Выберите суп
+    // 1 - Выберите главное блюдо  
+    // 2 - Выберите напиток
+    // 3 - Выберите салат или стартер
+    // 4 - Выберите десерт
+
+    const sectionIndex = {
+        soup: 0,
+        main: 1,
+        drink: 2,
+        salad: 3,
+        dessert: 4
     };
 
-    const sections = document.querySelectorAll('.dishes-section');
-    for (let section of sections) {
-        const h2 = section.querySelector('h2');
-        if (h2 && h2.textContent === categoryTitles[category]) {
-            return section;
-        }
-    }
-    return null;
+    return sections[sectionIndex[category]] || null;
 }
 
 function createFiltersForCategory(section, category, filters) {
