@@ -1,6 +1,64 @@
 ﻿// dishes.js
 let dishes = [];
 
+// Fallback данные для главных блюд (если их нет в API)
+const fallbackMainDishes = [
+    {
+        keyword: 'main_1',
+        name: 'Жареная картошка с грибами',
+        price: 150,
+        category: 'main',
+        count: '250 г',
+        image: 'images/dish1.jpg',
+        kind: 'veg'
+    },
+    {
+        keyword: 'main_2',
+        name: 'Куриный стейк с овощами',
+        price: 200,
+        category: 'main',
+        count: '300 г',
+        image: 'images/dish6.jpg',
+        kind: 'meat'
+    },
+    {
+        keyword: 'main_3',
+        name: 'Жареный лосось с рисом',
+        price: 250,
+        category: 'main',
+        count: '280 г',
+        image: 'images/dish4.jpg',
+        kind: 'fish'
+    },
+    {
+        keyword: 'main_4',
+        name: 'Лазанья',
+        price: 180,
+        category: 'main',
+        count: '320 г',
+        image: 'images/dish3.jpg',
+        kind: 'meat'
+    },
+    {
+        keyword: 'main_5',
+        name: 'Овощное рагу',
+        price: 140,
+        category: 'main',
+        count: '270 г',
+        image: 'images/dish5.jpg',
+        kind: 'veg'
+    },
+    {
+        keyword: 'main_6',
+        name: 'Пюре с котлетами',
+        price: 280,
+        category: 'main',
+        count: '350 г',
+        image: 'images/dish2.jpg',
+        kind: 'meat'
+    }
+];
+
 // Функция для преобразования данных из API в наш формат
 function transformDishesFromAPI(apiDishes) {
     return apiDishes.map(dish => {
@@ -22,7 +80,17 @@ async function initializeDishes() {
     const apiDishes = await loadDishes();
     dishes = transformDishesFromAPI(apiDishes);
 
-    console.log('Преобразованные блюда:', dishes);
+    console.log('Преобразованные блюда с API:', dishes);
+
+    // Проверяем, есть ли главные блюда в данных API
+    const hasMainDishesInAPI = dishes.some(dish => dish.category === 'main');
+    console.log('Есть ли главные блюда в API:', hasMainDishesInAPI);
+
+    // Если главных блюд нет в API, добавляем наши fallback данные
+    if (!hasMainDishesInAPI) {
+        console.log('Добавляем fallback главные блюда');
+        dishes = [...dishes, ...fallbackMainDishes];
+    }
 
     // Сортируем блюда в алфавитном порядке по названию
     const sortedDishes = [...dishes].sort((a, b) => a.name.localeCompare(b.name));
@@ -35,6 +103,14 @@ async function initializeDishes() {
         salad: sortedDishes.filter(dish => dish.category === 'salad'),
         dessert: sortedDishes.filter(dish => dish.category === 'dessert')
     };
+
+    console.log('Блюда по категориям после добавления fallback:', {
+        soup: dishesByCategory.soup.length,
+        main: dishesByCategory.main.length,
+        drink: dishesByCategory.drink.length,
+        salad: dishesByCategory.salad.length,
+        dessert: dishesByCategory.dessert.length
+    });
 
     // Отображаем блюда для каждой категории
     displayCategoryDishes('soup', dishesByCategory.soup);
@@ -65,16 +141,27 @@ function displayCategoryDishes(category, dishes) {
     };
 
     const container = sections[sectionIndex[category]]?.querySelector('.dishes-grid');
-    if (!container) return;
+    if (!container) {
+        console.error(`Контейнер для категории ${category} не найден!`);
+        return;
+    }
 
     // Очищаем контейнер
     container.innerHTML = '';
+
+    // Если блюд нет, показываем сообщение
+    if (dishes.length === 0) {
+        container.innerHTML = '<p style="text-align: center; color: #666;">Блюда не найдены</p>';
+        return;
+    }
 
     // Создаем карточки для каждого блюда
     dishes.forEach(dish => {
         const dishCard = createDishCard(dish);
         container.appendChild(dishCard);
     });
+
+    console.log(`Отображено ${dishes.length} блюд в категории ${category}`);
 }
 
 function createDishCard(dish) {
@@ -82,6 +169,7 @@ function createDishCard(dish) {
     card.className = 'dish-card';
     card.setAttribute('data-dish', dish.keyword);
     card.setAttribute('data-kind', dish.kind);
+    card.setAttribute('data-category', dish.category);
 
     card.innerHTML = `
         <img src="${dish.image}" alt="${dish.name}" onerror="this.src='images/placeholder.jpg'">
@@ -127,7 +215,11 @@ function initializeFilters() {
     Object.keys(filtersConfig).forEach(category => {
         const section = findCategorySection(category);
         if (section) {
-            createFiltersForCategory(section, category, filtersConfig[category]);
+            // Проверяем, есть ли блюда в этой категории
+            const categoryDishes = document.querySelectorAll(`.dish-card[data-category="${category}"]`);
+            if (categoryDishes.length > 0) {
+                createFiltersForCategory(section, category, filtersConfig[category]);
+            }
         }
     });
 }
