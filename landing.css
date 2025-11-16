@@ -1,0 +1,68 @@
+/* landing.css */
+:root {
+    --primary-color: #ff6b35;
+    --secondary-color: #1a1a1a;
+    --accent-color: #f8f9fa;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/lunch.jpg') center/cover no-repeat;
+    color: white;
+    padding: 150px 0;
+    text-align: center;
+}
+
+.feature-card {
+    transition: transform 0.3s ease;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+    .feature-card:hover {
+        transform: translateY(-10px);
+    }
+
+.feature-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.cta-section {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 80px 0;
+}
+
+.contact-section {
+    background-color: var(--accent-color);
+    padding: 80px 0;
+}
+
+.btn-primary-custom {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 12px 30px;
+    font-weight: 600;
+}
+
+    .btn-primary-custom:hover {
+        background-color: #e55a2b;
+        border-color: #e55a2b;
+    }
+
+.navbar-custom {
+    background-color: var(--secondary-color);
+}
+
+.footer-custom {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 30px 0;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(255, 107, 53, 0.25);
+}

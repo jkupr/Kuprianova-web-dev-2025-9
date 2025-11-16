@@ -354,3 +354,171 @@ body.auth-page {
 		padding: 15px;
 	}
 }
+
+
+
+/* Добавьте эти стили в style.css */
+
+/* Стили для лендинга */
+.hero-section {
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/lunch.jpg') center/cover no-repeat;
+	color: white;
+	padding: 150px 0;
+	text-align: center;
+	margin-top: 0;
+}
+
+.feature-card {
+	transition: transform 0.3s ease;
+	border: none;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	height: 100%;
+	border-radius: 15px;
+}
+
+	.feature-card:hover {
+		transform: translateY(-10px);
+	}
+
+.feature-icon {
+	font-size: 3rem;
+	color: tomato;
+	margin-bottom: 1rem;
+}
+
+.cta-section {
+	background-color: #1a1a1a;
+	color: white;
+	padding: 80px 0;
+}
+
+.contact-section {
+	background-color: #f8f9fa;
+	padding: 80px 0;
+}
+
+.btn-primary-custom {
+	background-color: tomato;
+	border-color: tomato;
+	padding: 12px 30px;
+	font-weight: 600;
+	color: white;
+}
+
+	.btn-primary-custom:hover {
+		background-color: #e55a2b;
+		border-color: #e55a2b;
+		color: white;
+	}
+
+.navbar-custom {
+	background-color: #1a1a1a;
+}
+
+.footer-custom {
+	background-color: #1a1a1a;
+	color: white;
+	padding: 30px 0;
+}
+
+
+
+
+/* Стили для страницы авторизации */
+body.auth-page {
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("images/auth.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	font-family: 'Roboto', sans-serif;
+}
+
+.auth-container {
+	background: white;
+	padding: 40px;
+	border-radius: 15px;
+	width: 90%;
+	max-width: 400px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+	.auth-container h1 {
+		text-align: center;
+		margin-bottom: 30px;
+		font-size: 28px;
+		color: #1a1a1a;
+		font-weight: 700;
+	}
+
+	.auth-container form > div {
+		margin-bottom: 20px;
+	}
+
+	.auth-container label {
+		display: block;
+		margin-bottom: 8px;
+		font-weight: 500;
+		color: #333;
+	}
+
+	.auth-container input[type="text"],
+	.auth-container input[type="password"] {
+		width: 100%;
+		padding: 12px 15px;
+		border: 2px solid #f1eee9;
+		border-radius: 8px;
+		font-family: 'Roboto', sans-serif;
+		font-size: 16px;
+		transition: all 0.3s ease;
+		box-sizing: border-box;
+	}
+
+		.auth-container input[type="text"]:focus,
+		.auth-container input[type="password"]:focus {
+			outline: none;
+			border-color: tomato;
+			box-shadow: 0 0 0 2px rgba(255, 99, 71, 0.2);
+		}
+
+.remember-me {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+	.remember-me input[type="checkbox"] {
+		width: 18px;
+		height: 18px;
+		margin: 0;
+	}
+
+	.remember-me label {
+		margin-bottom: 0;
+		cursor: pointer;
+		font-weight: normal;
+	}
+
+.auth-container button {
+	width: 100%;
+	padding: 15px;
+	background-color: #1a1a1a;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+	.auth-container button:hover {
+		background-color: #333;
+		transform: translateY(-2px);
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	}

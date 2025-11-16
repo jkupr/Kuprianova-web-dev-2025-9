@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\orders.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:orders.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\landing.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:landing.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\lunch.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:lunch.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\landing.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:landing.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\orderPage.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:orderPage.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\orders.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -27,20 +35,8 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:lunch.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\clearOldOrders.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:clearOldOrders.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\api.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:api.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\server\\landing.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\landing.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\server\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -59,16 +55,24 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\db.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\print.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:print.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\orders.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:orders.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\orderPage.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:orderPage.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\lunchValidation.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:lunchValidation.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\lunch.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:lunch.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\displayDishes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -83,8 +87,16 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:comboManager.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\clearOldOrders.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:clearOldOrders.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\cartManager.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cartManager.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\api.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:api.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -98,72 +110,111 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
+              "Title": "landing.css",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\landing.css",
+              "RelativeDocumentMoniker": "landing.css",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\landing.css",
+              "RelativeToolTip": "landing.css",
+              "ViewState": "AgIAACMAAAAAAAAAAAAqwEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-16T23:11:54.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "landing.html",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\landing.html",
+              "RelativeDocumentMoniker": "landing.html",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\landing.html",
+              "RelativeToolTip": "landing.html",
+              "ViewState": "AgIAAO0AAAAAAAAAAAAqwA4BAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-11-16T23:01:13.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "landing.html",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\server\\landing.html",
+              "RelativeDocumentMoniker": "server\\landing.html",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\server\\landing.html",
+              "RelativeToolTip": "server\\landing.html",
+              "ViewState": "AgIAACIBAAAAAAAAAAAkwEUBAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-11-16T22:56:30.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "clearOldOrders.js",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\clearOldOrders.js",
               "RelativeDocumentMoniker": "clearOldOrders.js",
               "ToolTip": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\clearOldOrders.js",
               "RelativeToolTip": "clearOldOrders.js",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAAC4AAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAowCAAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-11-16T21:49:08.686Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 14,
               "Title": "orders.js",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\orders.js",
               "RelativeDocumentMoniker": "orders.js",
               "ToolTip": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\orders.js",
               "RelativeToolTip": "orders.js",
-              "ViewState": "AgIAAJoAAAAAAAAAAAAAAFMCAAADAAAAAAAAAA==",
+              "ViewState": "AgIAADICAAAAAAAAAAAowE4CAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-11-16T21:33:43.902Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "orders.html",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\orders.html",
               "RelativeDocumentMoniker": "orders.html",
               "ToolTip": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\orders.html",
               "RelativeToolTip": "orders.html",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAABMAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-11-16T21:33:20.671Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "package-lock.json",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\server\\package-lock.json",
               "RelativeDocumentMoniker": "server\\package-lock.json",
               "ToolTip": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\server\\package-lock.json",
               "RelativeToolTip": "server\\package-lock.json",
-              "ViewState": "AgIAAFUFAAAAAAAAAAAswGcFAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAFcFAAAAAAAAAAAmwGsFAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-11-15T19:49:33.872Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "db.json",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\server\\db.json",
               "RelativeDocumentMoniker": "server\\db.json",
               "ToolTip": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\server\\db.json",
               "RelativeToolTip": "server\\db.json",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAswEcAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAmwDsAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-11-15T19:40:43.261Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "server.js",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\server\\server.js",
               "RelativeDocumentMoniker": "server\\server.js",
@@ -176,7 +227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "package.json",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\server\\package.json",
               "RelativeDocumentMoniker": "server\\package.json",
@@ -189,65 +240,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "cartManager.js",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\cartManager.js",
               "RelativeDocumentMoniker": "cartManager.js",
               "ToolTip": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\cartManager.js",
               "RelativeToolTip": "cartManager.js",
-              "ViewState": "AgIAAGYBAAAAAAAAAAAuwHABAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGgBAAAAAAAAAAAowHoBAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-11-13T21:02:28.78Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 15,
               "Title": "orderPage.js",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\orderPage.js",
               "RelativeDocumentMoniker": "orderPage.js",
               "ToolTip": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\orderPage.js",
               "RelativeToolTip": "orderPage.js",
-              "ViewState": "AgIAADoDAAAAAAAAAAAAAFoDAAABAAAAAAAAAA==",
+              "ViewState": "AgIAADoDAAAAAAAAAAAkwFEDAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-11-13T20:35:49.97Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "order.html",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\order.html",
               "RelativeDocumentMoniker": "order.html",
               "ToolTip": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\order.html",
               "RelativeToolTip": "order.html",
-              "ViewState": "AgIAAHEAAAAAAAAAAAAAAIAAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-11-13T20:35:36.137Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 23,
               "Title": "api.js",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\api.js",
               "RelativeDocumentMoniker": "api.js",
               "ToolTip": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\api.js",
               "RelativeToolTip": "api.js",
-              "ViewState": "AgIAABMAAAAAAAAAAAAuwDYAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowCQAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-11-08T17:20:14.2Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "comboManager.js",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\comboManager.js",
               "RelativeDocumentMoniker": "comboManager.js",
               "ToolTip": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\comboManager.js",
               "RelativeToolTip": "comboManager.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAowBAAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-11-08T16:03:44.125Z",
               "EditorCaption": ""
@@ -260,27 +311,27 @@
               "RelativeDocumentMoniker": "lunchValidation.js",
               "ToolTip": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\lunchValidation.js",
               "RelativeToolTip": "lunchValidation.js",
-              "ViewState": "AgIAAJ8AAAAAAAAAAAAuwL4AAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAowLkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-11-08T15:48:02.545Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "login.html",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\login.html",
               "RelativeDocumentMoniker": "login.html",
               "ToolTip": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\login.html",
               "RelativeToolTip": "login.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-10-31T16:41:57.143Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "displayDishes.js",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\displayDishes.js",
               "RelativeDocumentMoniker": "displayDishes.js",
@@ -293,78 +344,78 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "dishes.js",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\dishes.js",
               "RelativeDocumentMoniker": "dishes.js",
               "ToolTip": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\dishes.js",
               "RelativeToolTip": "dishes.js",
-              "ViewState": "AgIAAAICAAAAAAAAAAAiwBECAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAQCAAAAAAAAAAAYwBQCAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-10-30T14:36:35.587Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\index.html",
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAFoAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-10-29T19:08:17.025Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 2,
               "Title": "style.css",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\style.css",
               "RelativeDocumentMoniker": "style.css",
               "ToolTip": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\style.css",
               "RelativeToolTip": "style.css",
-              "ViewState": "AgIAAD8BAAAAAAAAAAAswF0BAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAOgBAAAAAAAAAAAkwAsCAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-10-29T18:34:14.575Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 17,
               "Title": "lunch.css",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\lunch.css",
               "RelativeDocumentMoniker": "lunch.css",
               "ToolTip": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\lunch.css",
               "RelativeToolTip": "lunch.css",
-              "ViewState": "AgIAAEQGAAAAAAAAAAAwwGcGAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAEQGAAAAAAAAAAAkwFYGAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-10-29T18:02:44.63Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 13,
               "Title": "print.css",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\print.css",
               "RelativeDocumentMoniker": "print.css",
               "ToolTip": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\print.css",
               "RelativeToolTip": "print.css",
-              "ViewState": "AgIAADkAAAAAAAAAAAAswFgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAAAkwFcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-10-29T17:58:01.616Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "lunch.html",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\lunch.html",
               "RelativeDocumentMoniker": "lunch.html",
               "ToolTip": "C:\\Users\\User\\Desktop\\\u043F\u043E\u043B\u0438\u0442\u0435\u0445 \u043B\u0430\u0431\u044B\\Kuprianova-web-dev-2025-9\\lunch.html",
               "RelativeToolTip": "lunch.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-10-29T17:50:57.518Z",
               "EditorCaption": ""
