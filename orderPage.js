@@ -339,6 +339,15 @@ function loadOrderComposition() {
         }
     } else {
         console.log('В localStorage нет сохраненного заказа');
+        orderComposition.innerHTML = `
+            <div class="empty-order-message">
+                <p>Ничего не выбрано. Чтобы добавить блюда в заказ, перейдите на страницу 
+                <a href="lunch.html" class="order-link">Собрать ланч</a>.</p>
+            </div>
+        `;
+        orderItemsList.innerHTML = '<p class="no-selection-text">Нет выбранных блюд</p>';
+        totalAmountElement.textContent = '0';
+        return;
     }
 
     const selectedDishes = {};
@@ -746,7 +755,8 @@ function initializeOrderForm() {
                 console.log('Результат отправки:', result);
 
                 if (result.success) {
-                    showOrderNotification(result.message || 'Заказ успешно оформлен!', 'success');
+                    showOrderNotification('Заказ успешно оформлен! Спасибо за ваш заказ!', 'success');
+                    
                     localStorage.removeItem('currentOrder');
                     console.log('Заказ очищен из localStorage');
                     
@@ -754,7 +764,8 @@ function initializeOrderForm() {
                     
                     setTimeout(() => {
                         loadOrderComposition();
-                    }, 2000);
+                    }, 1000);
+                    
                 } else {
                     throw new Error(result.message);
                 }
@@ -793,7 +804,7 @@ function showOrderNotification(message, type = 'error') {
     const notification = document.createElement('div');
     notification.className = 'order-notification';
 
-    const backgroundColor = type === 'success' ? '#4CAF50' : '#f44336';
+    const backgroundColor = type === 'success' ? '#4CAF50' : type === 'error' ? '#f44336' : '#2196F3';
 
     notification.innerHTML = `
         <div class="notification-content">
@@ -809,11 +820,40 @@ function showOrderNotification(message, type = 'error') {
         notification.remove();
     });
 
-    if (type === 'success') {
-        setTimeout(() => {
-            if (document.body.contains(notification)) {
-                notification.remove();
-            }
-        }, 5000);
+    setTimeout(() => {
+        if (document.body.contains(notification)) {
+            notification.remove();
+        }
+    }, 5000);
+}
+
+function getOrderFormData() {
+    const name = document.getElementById('order-name').value.trim();
+    const email = document.getElementById('order-email').value.trim();
+    const phone = document.getElementById('order-phone').value.trim();
+    const address = document.getElementById('order-address').value.trim();
+    const comments = document.getElementById('order-comments').value.trim();
+
+    const newsletter = document.getElementById('order-newsletter').checked;
+
+    // Получаем тип доставки
+    const deliveryType = document.querySelector('input[name="delivery_time"]:checked').value;
+    const specificTime = document.getElementById('order-specific-time').value;
+
+    const orderData = {
+        full_name: name,
+        email: email,
+        phone: phone,
+        delivery_address: address,
+        delivery_type: deliveryType,
+        comment: comments,
+        subscribe: newsletter ? 1 : 0
+    };
+
+    // Добавляем время доставки, если выбрано конкретное время
+    if (deliveryType === 'specific' && specificTime) {
+        orderData.delivery_time = specificTime;
     }
+
+    return orderData;
 }
