@@ -1,10 +1,9 @@
-// api.js
-const API_URL = 'https://edu.std-900.ist.mospolytech.ru/labs/api/dishes';
+п»ї// api.js
+const API_URL = 'http://localhost:3001/dishes';
 
-// Функция для загрузки блюд с API
 async function loadDishes() {
     try {
-        console.log('Загрузка блюд с API...');
+        console.log('Р—Р°РіСЂСѓР·РєР° Р±Р»СЋРґ СЃ JSON Server...');
         const response = await fetch(API_URL);
 
         if (!response.ok) {
@@ -12,12 +11,41 @@ async function loadDishes() {
         }
 
         const dishes = await response.json();
-        console.log('Блюда загружены с API:', dishes.length, 'шт.');
+        console.log('Р‘Р»СЋРґР° Р·Р°РіСЂСѓР¶РµРЅС‹ СЃ JSON Server:', dishes.length, 'С€С‚.');
 
-        return dishes;
+        const nonMainDishes = dishes.filter(dish => dish.category !== 'main');
+        console.log('РќРµ РіР»Р°РІРЅС‹Рµ Р±Р»СЋРґР° СЃ API:', nonMainDishes.length, 'С€С‚.');
+
+        return nonMainDishes;
     } catch (error) {
-        console.error('Ошибка при загрузке блюд:', error);
-        alert('Не удалось загрузить меню. Пожалуйста, обновите страницу.');
+        console.error('РћС€РёР±РєР° РїСЂРё Р·Р°РіСЂСѓР·РєРµ Р±Р»СЋРґ:', error);
+        alert('РќРµ СѓРґР°Р»РѕСЃСЊ Р·Р°РіСЂСѓР·РёС‚СЊ РјРµРЅСЋ. РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РѕР±РЅРѕРІРёС‚Рµ СЃС‚СЂР°РЅРёС†Сѓ.');
         return [];
+    }
+}
+
+async function submitOrder(orderData) {
+    try {
+        console.log('РћС‚РїСЂР°РІРєР° Р·Р°РєР°Р·Р° РЅР° СЃРµСЂРІРµСЂ:', orderData);
+        
+        const response = await fetch('http://localhost:3001/orders', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(orderData)
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const result = await response.json();
+        console.log('Р—Р°РєР°Р· СѓСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅ:', result);
+        return result;
+
+    } catch (error) {
+        console.error('РћС€РёР±РєР° РїСЂРё РѕС‚РїСЂР°РІРєРµ Р·Р°РєР°Р·Р°:', error);
+        throw error;
     }
 }

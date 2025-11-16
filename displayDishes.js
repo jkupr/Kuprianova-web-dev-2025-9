@@ -1,6 +1,5 @@
 ﻿// displayDishes.js
 document.addEventListener('DOMContentLoaded', function () {
-    // Теперь инициализация происходит через initializeDishes()
     initializeDishes().then(() => {
         console.log('Все блюда загружены и отображены');
         // Скрываем индикатор загрузки

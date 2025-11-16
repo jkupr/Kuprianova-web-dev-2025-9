@@ -1,0 +1,75 @@
+{
+  "dishes": [],
+  "orders": [
+    {
+      "full_name": "julia",
+      "email": "example@gmail.com",
+      "phone": "+7 (960) 747-80-04",
+      "delivery_address": "Пушкина 44",
+      "delivery_type": "now",
+      "comment": "",
+      "subscribe": 1,
+      "main_course_id": 101,
+      "drink_id": 206,
+      "order_date": "2025-11-16T20:49:15.722Z",
+      "id": 1
+    },
+    {
+      "full_name": "julia",
+      "email": "example@gmail.com",
+      "phone": "+7 (960) 747-80-04",
+      "delivery_address": "Пушкина 44",
+      "delivery_type": "now",
+      "comment": "",
+      "subscribe": 1,
+      "soup_id": 4,
+      "salad_id": 304,
+      "drink_id": 202,
+      "order_date": "2025-11-16T20:49:46.316Z",
+      "id": 2
+    },
+    {
+      "full_name": "julia",
+      "email": "example@gmail.com",
+      "phone": "+7 (960) 747-80-04",
+      "delivery_address": "Пушкина 44",
+      "delivery_type": "now",
+      "comment": "",
+      "subscribe": 1,
+      "soup_id": 4,
+      "main_course_id": 102,
+      "drink_id": 206,
+      "order_date": "2025-11-16T20:50:30.974Z",
+      "id": 3
+    },
+    {
+      "full_name": "julia",
+      "email": "example@gmail.com",
+      "phone": "+7 (960) 747-80-04",
+      "delivery_address": "Пушкина 44",
+      "delivery_type": "now",
+      "comment": "",
+      "subscribe": 1,
+      "soup_id": 5,
+      "main_course_id": 105,
+      "salad_id": 306,
+      "drink_id": 203,
+      "dessert_id": 405,
+      "order_date": "2025-11-16T20:51:04.336Z",
+      "id": 4
+    },
+    {
+      "full_name": "julia",
+      "email": "example@gmail.com",
+      "phone": "+7 (960) 747-80-04",
+      "delivery_address": "Пушкина 44",
+      "delivery_type": "now",
+      "comment": "",
+      "subscribe": 1,
+      "main_course_id": 106,
+      "drink_id": 206,
+      "order_date": "2025-11-16T20:53:04.668Z",
+      "id": 5
+    }
+  ]
+}

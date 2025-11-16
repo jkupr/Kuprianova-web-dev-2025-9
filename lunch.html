@@ -13,8 +13,8 @@
             <nav class="main-menu">
                 <ul>
                     <li><a href="index.html">О нас</a></li>
-                    <li><a href="lunch.html" class="active">Собрать ланч</a></li>
-                    <li><a href="#product">Заказы</a></li>
+                    <li><a href="lunch.html">Собрать ланч</a></li>
+                    <li><a href="order.html" class="active">Оформить заказ</a></li> 
                     <li><a href="#contact">Контакты</a></li>
                     <li class="auth-item"><a href="login.html" class="auth-link">Войти в систему</a></li>
                 </ul>
@@ -221,83 +221,24 @@
                     </div>
                 </section>
 
-                <!-- Форма заказа -->
-                <section class="order-section">
-                    <h2>Сделать заказ</h2>
-                    <form class="order-form" method="POST" action="https://httpbin.org/post">
 
-                        <!-- Раздел с заказом -->
-                        <div class="order-part">
+                <!-- Панель перехода к оформлению заказа -->
+                <div class="order-panel" id="order-panel">
+                    <div class="order-panel-content">
+                        <div class="order-summary">
                             <h3>Ваш заказ</h3>
-
-                            <div class="form-row">
-                                <label for="comments">Комментарии к заказу</label>
-                                <textarea id="comments" name="comments" rows="3" class="form-textarea" placeholder="Ваши пожелания..."></textarea>
+                            <div class="order-items" id="order-panel-items">
+                                <!-- Блюда будут добавлены через JavaScript -->
+                            </div>
+                            <div class="order-total">
+                                <strong>Итого: <span id="order-panel-total">0</span> руб.</strong>
                             </div>
                         </div>
-
-                        <hr class="divider">
-
-                        <!-- Раздел с данными -->
-                        <div class="order-part">
-                            <h3>Ваши данные</h3>
-
-                            <div class="form-row">
-                                <label for="name">Имя</label>
-                                <input type="text" id="name" name="name" class="form-input" placeholder="Ваше имя">
-                            </div>
-
-                            <div class="form-row">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" class="form-input" placeholder="example@mail.ru">
-                            </div>
-
-                            <div class="form-row checkbox-row">
-                                <input type="checkbox" id="newsletter" name="newsletter" checked>
-                                <label for="newsletter">Получать информацию о скидках и акциях</label>
-                            </div>
-
-                            <div class="form-row">
-                                <label for="phone">Номер телефона</label>
-                                <input type="tel" id="phone" name="phone" class="form-input" placeholder="+7 (000) 000-00-00">
-                            </div>
-
-                            <div class="form-row">
-                                <label for="address">Адрес доставки</label>
-                                <input type="text" id="address" name="address" class="form-input" placeholder="Улица, дом, квартира">
-                                <small class="form-note">Доставка осуществляется только по Москве</small>
-                            </div>
-
-                            <div class="form-row">
-                                <label>Время доставки:</label>
-                                <div class="radio-group">
-                                    <div class="radio-option">
-                                        <input type="radio" id="time_asap" name="delivery_time" value="asap" checked>
-                                        <label for="time_asap">Как можно скорее</label>
-                                    </div>
-                                    <div class="radio-option">
-                                        <input type="radio" id="time_specific" name="delivery_time" value="specific">
-                                        <label for="time_specific">К указанному времени</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-row">
-                                <label for="specific_time">Укажите время доставки</label>
-                                <input type="time" id="specific_time" name="specific_time" class="form-input" min="07:00" max="23:00">
-                                <small class="form-note">Доступное время доставки с 7:00 до 23:00</small>
-                            </div>
-                        </div>
-
-                        <hr class="divider">
-
-                        <!-- Кнопки -->
-                        <div class="form-buttons">
-                            <button type="reset" class="reset-btn">Сбросить</button>
-                            <button type="submit" class="submit-btn">Отправить</button>
-                        </div>
-                    </form>
-                </section>
+                        <a href="order.html" class="proceed-to-order-btn" id="proceed-to-order-btn">
+                            Перейти к оформлению
+                        </a>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -312,8 +253,18 @@
     <script src="api.js"></script>
     <script src="dishes.js"></script>
     <script src="displayDishes.js"></script>
-    <script src="orderManager.js"></script>
+    <script src="cartManager.js"></script>
     <script src="lunchValidation.js"></script>
     <script src="comboManager.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const resetBtn = document.querySelector('.reset-btn');
+            if (resetBtn && typeof cartManager !== 'undefined') {
+                resetBtn.addEventListener('click', function () {
+                    cartManager.clearOrder();
+                });
+            }
+        });
+    </script>
 </body>
 </html>

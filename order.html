@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформить заказ - Food Construct</title>
+    <link rel="stylesheet" href="lunch.css">
+    <link rel="stylesheet" href="print.css" media="print">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="index.html">О нас</a></li>
+                    <li><a href="lunch.html">Собрать ланч</a></li>
+                    <li><a href="order.html" class="active">Оформить заказ</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                    <li class="auth-item"><a href="login.html" class="auth-link">Войти в систему</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Оформить заказ</h1>
+
+            <!-- Раздел с составом заказа -->
+            <section class="order-composition-section">
+                <h2>Состав заказа</h2>
+                <div class="dishes-grid" id="order-composition">
+                    <!-- Блюда будут загружены через JavaScript -->
+                </div>
+            </section>
+
+            <!-- Раздел с оформлением заказа -->
+            <section class="order-section">
+                <h2>Оформление заказа</h2>
+
+                <!-- Левая часть - выбранные блюда -->
+                <div class="order-summary">
+                    <h3>Ваш заказ</h3>
+                    <div class="order-items-list" id="order-items-list">
+                        <!-- Список блюд будет сгенерирован через JavaScript -->
+                    </div>
+                    <div class="total-cost">
+                        <strong>Итого: <span id="order-total-amount">0</span> руб.</strong>
+                    </div>
+                </div>
+
+                <!-- Правая часть - форма оформления -->
+                <form class="order-form" method="POST" action="https://httpbin.org/post" id="order-form">
+                    <div class="order-part">
+                        <h3>Ваши данные</h3>
+
+                        <div class="form-row">
+                            <label for="order-name">Имя</label>
+                            <input type="text" id="order-name" name="name" class="form-input" placeholder="Ваше имя">
+                        </div>
+
+                        <div class="form-row">
+                            <label for="order-email">Email</label>
+                            <input type="email" id="order-email" name="email" class="form-input" placeholder="example@mail.ru">
+                        </div>
+
+                        <div class="form-row checkbox-row">
+                            <input type="checkbox" id="order-newsletter" name="newsletter" checked>
+                            <label for="order-newsletter">Получать информацию о скидках и акциях</label>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="order-phone">Номер телефона</label>
+                            <input type="tel" id="order-phone" name="phone" class="form-input" placeholder="+7 (000) 000-00-00">
+                        </div>
+
+                        <div class="form-row">
+                            <label for="order-address">Адрес доставки</label>
+                            <input type="text" id="order-address" name="address" class="form-input" placeholder="Улица, дом, квартира">
+                            <small class="form-note">Доставка осуществляется только по Москве</small>
+                        </div>
+
+                        <div class="form-row">
+                            <label>Время доставки:</label>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" id="order-time-asap" name="delivery_time" value="asap" checked>
+                                    <label for="order-time-asap">Как можно скорее</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="order-time-specific" name="delivery_time" value="specific">
+                                    <label for="order-time-specific">К указанному времени</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="order-specific-time">Укажите время доставки</label>
+                            <input type="time" id="order-specific-time" name="specific_time" class="form-input" min="07:00" max="23:00">
+                            <small class="form-note">Доступное время доставки с 7:00 до 23:00</small>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="order-comments">Комментарии к заказу</label>
+                            <textarea id="order-comments" name="comments" rows="3" class="form-textarea" placeholder="Ваши пожелания..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-buttons">
+                        <button type="button" class="reset-btn" id="clear-order-btn">Очистить заказ</button>
+                        <button type="submit" class="submit-btn">Отправить заказ</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            Позвонить нам +7-000-000-00-00
+        </div>
+    </footer>
+
+    <script src="api.js"></script>
+    <script src="dishes.js"></script>
+    <script src="orderPage.js"></script>
+</body>
+</html>

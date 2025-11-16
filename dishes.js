@@ -1,137 +1,357 @@
 ﻿// dishes.js
 let dishes = [];
 
-// Fallback данные для главных блюд (если их нет в API)
-const fallbackMainDishes = [
+const allDishes = [
     {
-        keyword: 'main_1',
-        name: 'Жареная картошка с грибами',
-        price: 150,
-        category: 'main',
-        count: '250 г',
-        image: 'images/dish1.jpg',
-        kind: 'veg'
+        "id": 1,
+        "keyword": "tom-yam",
+        "name": "Том Ям с креветками",
+        "price": 365,
+        "category": "soup",
+        "count": "350 мл",
+        "image": "images/soup1.jpg",
+        "kind": "fish"
     },
     {
-        keyword: 'main_2',
-        name: 'Куриный стейк с овощами',
-        price: 200,
-        category: 'main',
-        count: '300 г',
-        image: 'images/dish6.jpg',
-        kind: 'meat'
+        "id": 2,
+        "keyword": "norwegian",
+        "name": "Норвежский суп",
+        "price": 270,
+        "category": "soup",
+        "count": "350 мл",
+        "image": "images/soup2.jpg",
+        "kind": "fish"
     },
     {
-        keyword: 'main_3',
-        name: 'Жареный лосось с рисом',
-        price: 250,
-        category: 'main',
-        count: '280 г',
-        image: 'images/dish4.jpg',
-        kind: 'fish'
+        "id": 3,
+        "keyword": "mushroom",
+        "name": "Грибной крем-суп",
+        "price": 240,
+        "category": "soup",
+        "count": "350 мл",
+        "image": "images/soup3.jpg",
+        "kind": "veg"
     },
     {
-        keyword: 'main_4',
-        name: 'Лазанья',
-        price: 180,
-        category: 'main',
-        count: '320 г',
-        image: 'images/dish3.jpg',
-        kind: 'meat'
+        "id": 4,
+        "keyword": "borscht",
+        "name": "Борщ с говядиной",
+        "price": 280,
+        "category": "soup",
+        "count": "350 мл",
+        "image": "images/soup4.jpg",
+        "kind": "meat"
     },
     {
-        keyword: 'main_5',
-        name: 'Овощное рагу',
-        price: 140,
-        category: 'main',
-        count: '270 г',
-        image: 'images/dish5.jpg',
-        kind: 'veg'
+        "id": 5,
+        "keyword": "chicken-noodle",
+        "name": "Куриный суп с лапшой",
+        "price": 220,
+        "category": "soup",
+        "count": "350 мл",
+        "image": "images/soup5.jpg",
+        "kind": "meat"
     },
     {
-        keyword: 'main_6',
-        name: 'Пюре с котлетами',
-        price: 280,
-        category: 'main',
-        count: '350 г',
-        image: 'images/dish2.jpg',
-        kind: 'meat'
+        "id": 6,
+        "keyword": "vegetable",
+        "name": "Овощной суп",
+        "price": 190,
+        "category": "soup",
+        "count": "350 мл",
+        "image": "images/soup6.jpg",
+        "kind": "veg"
+    },
+    {
+        "id": 101,
+        "keyword": "potato",
+        "name": "Жареная картошка с грибами",
+        "price": 150,
+        "category": "main",
+        "count": "350 г",
+        "image": "images/dish1.jpg",
+        "kind": "veg"
+    },
+    {
+        "id": 102,
+        "keyword": "chicken",
+        "name": "Котлеты из курицы с картофельным пюре",
+        "price": 225,
+        "category": "main",
+        "count": "400 г",
+        "image": "images/dish2.jpg",
+        "kind": "meat"
+    },
+    {
+        "id": 103,
+        "keyword": "lasagna",
+        "name": "Лазанья",
+        "price": 385,
+        "category": "main",
+        "count": "350 г",
+        "image": "images/dish3.jpg",
+        "kind": "meat"
+    },
+    {
+        "id": 104,
+        "keyword": "salmon",
+        "name": "Лосось на гриле",
+        "price": 420,
+        "category": "main",
+        "count": "300 г",
+        "image": "images/dish4.jpg",
+        "kind": "fish"
+    },
+    {
+        "id": 105,
+        "keyword": "vegetable-stew",
+        "name": "Овощное рагу",
+        "price": 180,
+        "category": "main",
+        "count": "350 г",
+        "image": "images/dish5.jpg",
+        "kind": "veg"
+    },
+    {
+        "id": 106,
+        "keyword": "fried-fish",
+        "name": "Жареная рыба с овощами",
+        "price": 320,
+        "category": "main",
+        "count": "350 г",
+        "image": "images/dish6.jpg",
+        "kind": "fish"
+    },
+    {
+        "id": 201,
+        "keyword": "cola",
+        "name": "Coca-cola",
+        "price": 110,
+        "category": "drink",
+        "count": "300 мл",
+        "image": "images/drink1.jpg",
+        "kind": "cold"
+    },
+    {
+        "id": 202,
+        "keyword": "orange-juice",
+        "name": "Апельсиновый сок",
+        "price": 120,
+        "category": "drink",
+        "count": "300 мл",
+        "image": "images/drink2.jpg",
+        "kind": "cold"
+    },
+    {
+        "id": 203,
+        "keyword": "berry-juice",
+        "name": "Ягодный морс",
+        "price": 90,
+        "category": "drink",
+        "count": "300 мл",
+        "image": "images/drink3.jpg",
+        "kind": "cold"
+    },
+    {
+        "id": 204,
+        "keyword": "coffee",
+        "name": "Кофе американо",
+        "price": 130,
+        "category": "drink",
+        "count": "200 мл",
+        "image": "images/drink4.jpg",
+        "kind": "hot"
+    },
+    {
+        "id": 205,
+        "keyword": "tea",
+        "name": "Чай черный",
+        "price": 80,
+        "category": "drink",
+        "count": "250 мл",
+        "image": "images/drink5.jpg",
+        "kind": "hot"
+    },
+    {
+        "id": 206,
+        "keyword": "cappuccino",
+        "name": "Капучино",
+        "price": 160,
+        "category": "drink",
+        "count": "200 мл",
+        "image": "images/drink6.jpg",
+        "kind": "hot"
+    },
+    {
+        "id": 301,
+        "keyword": "caesar",
+        "name": "Цезарь с курицей",
+        "price": 280,
+        "category": "salad",
+        "count": "250 г",
+        "image": "images/salad1.jpg",
+        "kind": "meat"
+    },
+    {
+        "id": 302,
+        "keyword": "greek-salad",
+        "name": "Греческий салат",
+        "price": 240,
+        "category": "salad",
+        "count": "300 г",
+        "image": "images/salad2.jpg",
+        "kind": "veg"
+    },
+    {
+        "id": 303,
+        "keyword": "shrimp-cocktail",
+        "name": "Коктейль из креветок",
+        "price": 350,
+        "category": "salad",
+        "count": "200 г",
+        "image": "images/salad3.jpg",
+        "kind": "fish"
+    },
+    {
+        "id": 304,
+        "keyword": "vegetable-salad",
+        "name": "Овощной салат",
+        "price": 190,
+        "category": "salad",
+        "count": "300 г",
+        "image": "images/salad4.jpg",
+        "kind": "veg"
+    },
+    {
+        "id": 305,
+        "keyword": "caprese",
+        "name": "Капрезе",
+        "price": 270,
+        "category": "salad",
+        "count": "250 г",
+        "image": "images/salad5.jpg",
+        "kind": "veg"
+    },
+    {
+        "id": 306,
+        "keyword": "olivier",
+        "name": "Салат Оливье",
+        "price": 220,
+        "category": "salad",
+        "count": "250 г",
+        "image": "images/salad6.jpg",
+        "kind": "veg"
+    },
+    {
+        "id": 401,
+        "keyword": "tiramisu",
+        "name": "Тирамису",
+        "price": 210,
+        "category": "dessert",
+        "count": "150 г",
+        "image": "images/dessert1.jpg",
+        "kind": "medium"
+    },
+    {
+        "id": 402,
+        "keyword": "cheesecake",
+        "name": "Чизкейк",
+        "price": 230,
+        "category": "dessert",
+        "count": "120 г",
+        "image": "images/dessert2.jpg",
+        "kind": "small"
+    },
+    {
+        "id": 403,
+        "keyword": "chocolate-cake",
+        "name": "Шоколадный торт",
+        "price": 190,
+        "category": "dessert",
+        "count": "100 г",
+        "image": "images/dessert3.jpg",
+        "kind": "small"
+    },
+    {
+        "id": 404,
+        "keyword": "ice-cream",
+        "name": "Мороженое",
+        "price": 150,
+        "category": "dessert",
+        "count": "100 г",
+        "image": "images/dessert4.jpg",
+        "kind": "small"
+    },
+    {
+        "id": 405,
+        "keyword": "napoleon",
+        "name": "Наполеон",
+        "price": 180,
+        "category": "dessert",
+        "count": "150 г",
+        "image": "images/dessert5.jpg",
+        "kind": "medium"
+    },
+    {
+        "id": 406,
+        "keyword": "fruit-platter",
+        "name": "Фруктовая тарелка",
+        "price": 320,
+        "category": "dessert",
+        "count": "400 г",
+        "image": "images/dessert6.jpg",
+        "kind": "large"
     }
 ];
 
-// Функция для преобразования данных из API в наш формат
-function transformDishesFromAPI(apiDishes) {
-    return apiDishes.map(dish => {
-        // Преобразуем данные API в наш формат
-        return {
-            keyword: dish.keyword,
-            name: dish.name,
-            price: dish.price,
-            category: dish.category,
-            count: dish.count,
-            image: dish.image,
-            kind: dish.kind
-        };
-    });
-}
-
-// Функция для инициализации загрузки блюд
 async function initializeDishes() {
-    const apiDishes = await loadDishes();
-    dishes = transformDishesFromAPI(apiDishes);
+    try {
+        console.log('Загрузка локальных блюд...');
+        
+        dishes = [...allDishes];
+        
+        console.log('Загружено блюд:', dishes.length);
+        console.log('По категориям:', {
+            soup: dishes.filter(d => d.category === 'soup').length,
+            main: dishes.filter(d => d.category === 'main').length,
+            drink: dishes.filter(d => d.category === 'drink').length,
+            salad: dishes.filter(d => d.category === 'salad').length,
+            dessert: dishes.filter(d => d.category === 'dessert').length
+        });
 
-    console.log('Преобразованные блюда с API:', dishes);
+        const sortedDishes = [...dishes].sort((a, b) => a.name.localeCompare(b.name));
 
-    // Проверяем, есть ли главные блюда в данных API
-    const hasMainDishesInAPI = dishes.some(dish => dish.category === 'main');
-    console.log('Есть ли главные блюда в API:', hasMainDishesInAPI);
+        const dishesByCategory = {
+            soup: sortedDishes.filter(dish => dish.category === 'soup'),
+            main: sortedDishes.filter(dish => dish.category === 'main'),
+            drink: sortedDishes.filter(dish => dish.category === 'drink'),
+            salad: sortedDishes.filter(dish => dish.category === 'salad'),
+            dessert: sortedDishes.filter(dish => dish.category === 'dessert')
+        };
 
-    // Если главных блюд нет в API, добавляем наши fallback данные
-    if (!hasMainDishesInAPI) {
-        console.log('Добавляем fallback главные блюда');
-        dishes = [...dishes, ...fallbackMainDishes];
+        displayCategoryDishes('soup', dishesByCategory.soup);
+        displayCategoryDishes('main', dishesByCategory.main);
+        displayCategoryDishes('drink', dishesByCategory.drink);
+        displayCategoryDishes('salad', dishesByCategory.salad);
+        displayCategoryDishes('dessert', dishesByCategory.dessert);
+
+        initializeFilters();
+
+        console.log('Инициализация локальных блюд завершена успешно');
+
+    } catch (error) {
+        console.error('Ошибка при загрузке блюд:', error);
+        alert('Ошибка при загрузке меню. Пожалуйста, обновите страницу.');
     }
-
-    // Сортируем блюда в алфавитном порядке по названию
-    const sortedDishes = [...dishes].sort((a, b) => a.name.localeCompare(b.name));
-
-    // Группируем блюда по категориям
-    const dishesByCategory = {
-        soup: sortedDishes.filter(dish => dish.category === 'soup'),
-        main: sortedDishes.filter(dish => dish.category === 'main'),
-        drink: sortedDishes.filter(dish => dish.category === 'drink'),
-        salad: sortedDishes.filter(dish => dish.category === 'salad'),
-        dessert: sortedDishes.filter(dish => dish.category === 'dessert')
-    };
-
-    console.log('Блюда по категориям после добавления fallback:', {
-        soup: dishesByCategory.soup.length,
-        main: dishesByCategory.main.length,
-        drink: dishesByCategory.drink.length,
-        salad: dishesByCategory.salad.length,
-        dessert: dishesByCategory.dessert.length
-    });
-
-    // Отображаем блюда для каждой категории
-    displayCategoryDishes('soup', dishesByCategory.soup);
-    displayCategoryDishes('main', dishesByCategory.main);
-    displayCategoryDishes('drink', dishesByCategory.drink);
-    displayCategoryDishes('salad', dishesByCategory.salad);
-    displayCategoryDishes('dessert', dishesByCategory.dessert);
-
-    // Инициализируем фильтры
-    initializeFilters();
 }
 
-// Функция для получения блюд (для использования в других модулях)
 function getDishes() {
-    return dishes;
+    return dishes || [];
 }
 
-// Остальные функции остаются без изменений...
 function displayCategoryDishes(category, dishes) {
     const sections = document.querySelectorAll('.dishes-section');
-
+    
     const sectionIndex = {
         soup: 0,
         main: 1,
@@ -140,22 +360,29 @@ function displayCategoryDishes(category, dishes) {
         dessert: 4
     };
 
-    const container = sections[sectionIndex[category]]?.querySelector('.dishes-grid');
+    const section = sections[sectionIndex[category]];
+    if (!section) {
+        console.error(`Секция для категории ${category} не найдена!`);
+        return;
+    }
+
+    const container = section.querySelector('.dishes-grid');
     if (!container) {
         console.error(`Контейнер для категории ${category} не найден!`);
         return;
     }
 
-    // Очищаем контейнер
     container.innerHTML = '';
 
-    // Если блюд нет, показываем сообщение
     if (dishes.length === 0) {
-        container.innerHTML = '<p style="text-align: center; color: #666;">Блюда не найдены</p>';
+        container.innerHTML = `
+            <div style="grid-column: 1 / -1; text-align: center; padding: 40px; color: #666;">
+                <p>Блюда не найдены</p>
+            </div>
+        `;
         return;
     }
 
-    // Создаем карточки для каждого блюда
     dishes.forEach(dish => {
         const dishCard = createDishCard(dish);
         container.appendChild(dishCard);
@@ -172,7 +399,8 @@ function createDishCard(dish) {
     card.setAttribute('data-category', dish.category);
 
     card.innerHTML = `
-        <img src="${dish.image}" alt="${dish.name}" onerror="this.src='images/placeholder.jpg'">
+        <img src="${dish.image}" alt="${dish.name}" 
+             onerror="this.src='images/placeholder.jpg'; this.alt='Изображение не найдено'">
         <p class="price">${dish.price} руб.</p>
         <p class="name">${dish.name}</p>
         <p class="weight">${dish.count}</p>
@@ -183,7 +411,6 @@ function createDishCard(dish) {
 }
 
 function initializeFilters() {
-    // Конфигурация фильтров для каждой категории
     const filtersConfig = {
         soup: [
             { text: 'рыбный', kind: 'fish' },
@@ -211,11 +438,9 @@ function initializeFilters() {
         ]
     };
 
-    // Создаем фильтры для каждой категории
     Object.keys(filtersConfig).forEach(category => {
         const section = findCategorySection(category);
         if (section) {
-            // Проверяем, есть ли блюда в этой категории
             const categoryDishes = document.querySelectorAll(`.dish-card[data-category="${category}"]`);
             if (categoryDishes.length > 0) {
                 createFiltersForCategory(section, category, filtersConfig[category]);
@@ -226,7 +451,7 @@ function initializeFilters() {
 
 function findCategorySection(category) {
     const sections = document.querySelectorAll('.dishes-section');
-
+    
     const sectionIndex = {
         soup: 0,
         main: 1,
@@ -239,10 +464,14 @@ function findCategorySection(category) {
 }
 
 function createFiltersForCategory(section, category, filters) {
+    const existingFilters = section.querySelector('.filters-container');
+    if (existingFilters) {
+        existingFilters.remove();
+    }
+
     const filtersContainer = document.createElement('div');
     filtersContainer.className = 'filters-container';
 
-    // Добавляем кнопки фильтров
     filters.forEach(filter => {
         const button = document.createElement('button');
         button.className = 'filter-btn';
@@ -250,14 +479,13 @@ function createFiltersForCategory(section, category, filters) {
         button.setAttribute('data-category', category);
         button.textContent = filter.text;
 
-        button.addEventListener('click', function () {
+        button.addEventListener('click', function() {
             toggleFilter(this);
         });
 
         filtersContainer.appendChild(button);
     });
 
-    // Вставляем фильтры после заголовка и перед grid контейнером
     const gridContainer = section.querySelector('.dishes-grid');
     section.insertBefore(filtersContainer, gridContainer);
 }
@@ -267,18 +495,13 @@ function toggleFilter(button) {
     const category = button.getAttribute('data-category');
 
     if (button.classList.contains('active')) {
-        // Убираем активный класс и показываем все блюда
         button.classList.remove('active');
         showAllDishes(category);
     } else {
-        // Убираем активный класс со всех кнопок этой категории
         const allButtons = document.querySelectorAll(`.filter-btn[data-category="${category}"]`);
         allButtons.forEach(btn => btn.classList.remove('active'));
 
-        // Добавляем активный класс на текущую кнопку
         button.classList.add('active');
-
-        // Фильтруем блюда
         filterDishes(category, kind);
     }
 }
@@ -305,7 +528,20 @@ function showAllDishes(category) {
 
     const grid = section.querySelector('.dishes-grid');
     const allDishes = grid.querySelectorAll('.dish-card');
+    
     allDishes.forEach(dish => {
         dish.style.display = 'flex';
     });
 }
+
+function getDishByKeyword(keyword) {
+    return dishes.find(dish => dish.keyword === keyword);
+}
+
+function getDishesByCategory(category) {
+    return dishes.filter(dish => dish.category === category);
+}
+
+window.getDishes = getDishes;
+window.getDishByKeyword = getDishByKeyword;
+window.getDishesByCategory = getDishesByCategory;
